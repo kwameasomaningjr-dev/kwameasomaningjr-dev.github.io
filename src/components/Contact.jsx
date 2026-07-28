@@ -3,28 +3,6 @@ import './Contact.css';
 
 export default function Contact() {
     const [result, setResult] = useState("");
-<<<<<<< HEAD
-
-    const onSubmit = async (event) => {
-        event.preventDefault();
-        setResult("Sending....");
-
-        const formData = new FormData(event.target);
-
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-            setResult("Form Submitted Successfully");
-            event.target.reset();
-        } else {
-            console.log("Error", data);
-            setResult(data.message);
-=======
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [lastSubmitTime, setLastSubmitTime] = useState(0);
 
@@ -68,7 +46,6 @@ export default function Contact() {
             setResult("Failed to send message. Please try again.");
         } finally {
             setIsSubmitting(false);
->>>>>>> 7101bed73731a0fd5ec9e564f6e71f31f7b6cf60
         }
     };
 
@@ -158,11 +135,7 @@ export default function Contact() {
                                     required
                                 />
                             </div>
-<<<<<<< HEAD
-                            <button type="submit" className="form-submit">
-=======
                             <button type="submit" className="form-submit" disabled={isSubmitting}>
->>>>>>> 7101bed73731a0fd5ec9e564f6e71f31f7b6cf60
                                 {result ? result : "Send Message"}
                                 {!result && (
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
