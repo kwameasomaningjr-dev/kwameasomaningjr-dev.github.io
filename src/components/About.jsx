@@ -2,9 +2,12 @@ import "./About.css";
 
 const TECH_STACK = [
   { name: "Python", icon: "🐍" },
-  { name: "React", icon: "⚛️" },
+  { name: "SQL", icon: "🗄️" },
   { name: "Pandas", icon: "🐼" },
   { name: "Scikit-learn", icon: "⚙️" },
+  { name: "TensorFlow", icon: "🧠" },
+  { name: "Power BI", icon: "📈" },
+  { name: "Tableau", icon: "📉" },
   { name: "Excel", icon: "📋" },
   { name: "NumPy", icon: "🔢" },
   { name: "Matplotlib", icon: "🎨" },
@@ -46,9 +49,7 @@ export default function About() {
               <p>
                 My journey started with data, but now I also enjoy turning ideas
                 into websites that feel modern, intentional, and easy to use. I
-                like working from raw concepts to finished digital products. I
-                also run a startup, which keeps me focused on building with
-                purpose and thinking like a founder.
+                like working from raw concepts to finished digital products.
               </p>
               <p>
                 When I'm not coding, you'll find me refining UI details,

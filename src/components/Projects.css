@@ -62,7 +62,7 @@
 .project-overlay-btn {
     padding: 10px 24px;
     background: var(--accent);
-    color: #fff;
+    color: #0c0c0c;
     border-radius: 50px;
     font-size: var(--fs-sm);
     font-weight: 600;
@@ -74,6 +74,12 @@
 
 .project-overlay-btn:hover {
     background: var(--accent-light);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .project-info {
@@ -107,7 +113,7 @@
 .project-tag {
     padding: 4px 12px;
     font-size: var(--fs-xs);
-    background: rgba(108, 99, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
     color: var(--accent-light);
     border-radius: 50px;
     font-weight: 500;

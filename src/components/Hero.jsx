@@ -15,6 +15,11 @@ export default function Hero() {
       <div className='hero-grid'></div>
 
       <div className='hero-content'>
+        <div className='hero-badge'>
+          <span className='hero-badge-dot'></span>
+          Available for opportunities
+        </div>
+
         <h1 className='hero-name'>
           Richard Kwame <span className='glow-text'>Asomaning Jr</span>
         </h1>
@@ -43,6 +48,11 @@ export default function Hero() {
             <path d='M5 12h14M12 5l7 7-7 7' />
           </svg>
         </a>
+      </div>
+
+      <div className='hero-scroll'>
+        <span>Scroll</span>
+        <div className='scroll-line'></div>
       </div>
     </section>
   );
